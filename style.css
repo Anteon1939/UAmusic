@@ -1,0 +1,50 @@
+body {
+  font-family: Arial, sans-serif;
+  background: #f4f4f4;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+header {
+  background: #222;
+  color: #fff;
+  padding: 15px;
+}
+
+nav a {
+  margin: 0 15px;
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav a:hover {
+  color: #ffcc00;
+}
+
+.container {
+  padding: 20px;
+}
+
+/* Анімація */
+@keyframes frames {
+  0% { background-image: url("img/frame1.png"); }
+  14% { background-image: url("img/frame2.png"); }
+  28% { background-image: url("img/frame3.png"); }
+  42% { background-image: url("img/frame4.png"); }
+  57% { background-image: url("img/frame5.png"); }
+  71% { background-image: url("img/frame6.png"); }
+  85% { background-image: url("img/frame7.png"); }
+  100% { background-image: url("img/frame1.png"); }
+}
+
+.animation {
+  width: 400px;
+  height: 300px;
+  margin: 30px auto;
+  background-size: cover;
+  animation: frames 3s infinite;
+  border: 3px solid #222;
+  border-radius: 10px;
+}
